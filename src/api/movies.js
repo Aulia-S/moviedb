@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const fetchMovies = async (keyword) => {
   return await axios
-    .get(`https://www.omdbapi.com/?apikey=3fa7021f&s=${keyword}`)
+    .get(`http://www.omdbapi.com/?apikey=3fa7021f&s=${keyword}`)
     .then((response) => response.data.Search);
 };
 
