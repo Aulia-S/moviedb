@@ -39,22 +39,22 @@ const SearchBar = () => {
    *  RENDER
    ********************/
   return (
-    <form id="search-bar" class="input-group mt-5 w-100 shadow">
+    <form id="search-bar" className="input-group mt-5 w-100 shadow">
       <input
         type="text"
-        class="form-control"
+        className="form-control"
         placeholder="Search film"
         onInput={handleInput}
         value={form}
       />
       <button
-        class="btn btn-dark"
+        className="btn btn-dark"
         type="submit"
         id="search-button"
         onClick={handleClickSearch}
       >
         Search{" "}
-        <i class="fas fa-search" style={{ transform: "rotate(90deg)" }}></i>
+        <i className="fas fa-search" style={{ transform: "rotate(90deg)" }}></i>
       </button>
     </form>
   );

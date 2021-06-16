@@ -10,7 +10,7 @@ const MovieList = () => {
     <div className="container d-flex flex-column justify-content-start align-items-center min-vh-100">
       <SearchBar />
 
-      <div class="row row-cols-1 row-cols-md-2 g-5 my-3">
+      <div className="row row-cols-1 row-cols-md-2 g-5 my-3">
         {movies && movies.map((movie) => <MovieCard movie={movie} />)}
       </div>
     </div>

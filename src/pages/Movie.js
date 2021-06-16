@@ -42,7 +42,7 @@ const Movie = () => {
       >
         {/* <img src="../banner.jpg" alt="..." className="w-100" /> */}
       </div>
-      <table id="table-detail" class="table my-4">
+      <table id="table-detail" className="table my-4">
         <tbody>
           <tr>
             <th scope="row">Released</th>

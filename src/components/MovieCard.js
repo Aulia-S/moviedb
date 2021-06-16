@@ -6,16 +6,16 @@ const MovieCard = (props) => {
 
   return (
     <div>
-      <div class="col">
-        <div class="card shadow">
-          <img src={Poster} class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title display-6">
+      <div className="col">
+        <div className="card shadow">
+          <img src={Poster} className="card-img-top" alt="..." />
+          <div className="card-body">
+            <h5 className="card-title display-6">
               {Title} ({Year})
             </h5>
             <Link
               to={`/movies/${imdbID}`}
-              class="btn btn-dark d-block mt-4 ms-auto stretched-link"
+              className="btn btn-dark d-block mt-4 ms-auto stretched-link"
               style={{ width: "fit-content", fontSize: "20px" }}
             >
               View details
