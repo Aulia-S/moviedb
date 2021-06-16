@@ -3,6 +3,14 @@ import { useParams } from "react-router-dom";
 import { fetchMoviesById } from "../api/movies";
 
 const Movie = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "auto",
+    });
+  }, []);
+
   const { imdbID } = useParams();
   const [movie, setMovie] = useState("");
 
